@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity=
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+             crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="stylesheet.scss" rel="stylesheet/scss" type="text/css">
+</head>
+
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Suraj kandel</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home"  onclick="playSound('click.mp3.wav')">
+                              Home
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#portfolio" onclick="playSound('click.mp3.wav')">
+                              Portfolio
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#about" onclick="playSound('click.mp3.wav')" >
+                          
+                              About
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#services" onclick="playSound('click.mp3.wav')">
+                              Services
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#contact" onclick="playSound('click.mp3.wav')">
+                              Contact Me
+                          </a>
+                    </li>
+                    <li class="menu-list-items mode-switch">
+                      <button id="mode-switch" class="links" onclick="playSound('click.mp3.wav')">🌙</button>
+                  </li>
+                  
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+          
+            <div class="profile-pic-container">
+                <img src="1.jpeg" alt="Suraj Kandel's Profile Picture">
+            </div>
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading"> <span class="changing-color">Suraj Kandel</span></h1>
+                <h3 class="sub-heading" id="text">
+                    A webdeveloper with  Experience in <span id="code" class="fade-text">C program</span>.
+                </h3>
+            </div>
+            <div class="intro-buttons">
+                <button class="glow-on-hover" onclick="playSound('click.mp3.wav')">Hire Me</button>
+                <button class="glow-on-hover" onclick="playSound('click.mp3.wav')">Get Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">Featured Portfolio</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="wd.jpeg" 
+                                 alt="Web Design Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">Web Design</h3>
+                        <p class="small-para blue-text">Designing</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="wd2.jpeg" 
+                                 alt="Web Development Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Web Development
+                          </h3>
+                        <p class="small-para blue-text">Development</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="seo.jpeg" alt="SEO Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">SEO</h3>
+                        <p class="small-para blue-text">Optimization</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="co.jpeg" 
+                                 alt="Content Writting Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Content Writing
+                          </h3>
+                        <p class="small-para blue-text">Writing</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="e.jpeg" 
+                                 alt="Wordpress Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              WordPress Dev
+                          </h3>
+                        <p class="small-para blue-text">
+                              Content Management System
+                          </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="v.jpeg" 
+                                 alt="Video Editing Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Video Editing
+                          </h3>
+                        <p class="small-para blue-text">Editing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+              Hello! I’m Suraj Kandel, a web developer from Kathmandu, Nepal. I recently completed my high school education and have been diving deep into the world of programming and technology. With hands-on experience in HTML, CSS, JavaScript, PHP, SQL, C, and Python, I’m constantly learning and improving my skills to build impactful web projects.
+              I have a passion for creating efficient, user-friendly websites, and I’m currently focused on expanding my knowledge in both front-end and back-end development. In addition to my web development journey, I’m also exploring new technologies and seeking remote opportunities to collaborate with clients globally.
+              
+              When I’m not coding, I enjoy keeping up with tech trends and working on innovative projects that push the boundaries of what’s possible.
+              
+              Let’s connect and build something awesome together!
+           
+        </div>
+        <div class="about-image">
+            <img src="./Images/heroImg2.avif" alt="About Image">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">My Services</h1>
+        </div>
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Web Design</h3>
+                        <p class="small-para">
+            I offer custom web design services that focus on creating modern,
+         responsive, and visually striking websites tailored to your brand's unique identity.
+         My designs are not only aesthetically pleasing but are also built 
+with the user experience in mind, ensuring seamless navigation and engagement across all devices.
+                               From minimalistic designs to bold and dynamic layouts,
+                                I work closely with you to reflect your brand's values.
+
+
+                        </p>
+                        <p class="small-para">
+Your website is often the first interaction potential customers have with your brand.
+ That's why I focus on delivering a design that leaves a 
+ lasting impression while being functional and easy to navigate. 
+ Together, we'll create a web design that sets 
+ you apart from competitors and drives results for your business. 
+                       
+
+
+
+
+
+
+
+</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Web Development
+                          </h3>
+                        <p class="small-para">
+                            My web development services take your designs from 
+                            concept to reality, ensuring that your website performs
+                             flawlessly. With expertise in HTML, CSS, JavaScript, 
+                             PHP, and Python, I build fast, secure, and fully functional
+                              websites that deliver an exceptional user experience.
+                               Whether it’s a portfolio, business site, or an e-commerce 
+                               platform, I focus on developing features that meet your goals.
+
+
+
+
+                        </p>
+                        <p class="small-para">
+                            In addition to building your website, I optimize it for
+                             performance and security, ensuring it runs smoothly and
+                              efficiently. Whether you need advanced functionality or
+                               a simple, clean website, I ensure that every element is 
+                               responsive and scalable to meet your long-term needs.
+        it is crucial for me do to  advance project.                            </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">SEO</h3>
+                        <p class="small-para">
+                            I offer SEO services that focus on improving your website’s 
+                            visibility on search engines, helping you rank higher for 
+                            relevant keywords. Through a combination of on-page and 
+                            off-page strategies, I optimize your website’s content, 
+                            structure, and performance to ensure that it meets the 
+                            latest SEO standards. My goal is to increase organic 
+                            traffic, improve search engine rankings, and help your
+                             business reach a wider audience.
+
+                           
+                        </p>
+                        <p class="small-para">
+                            SEO is more than just keywords; it's about understanding 
+                            user behavior, staying ahead of search engine algorithm
+                             changes, and creating content that appeals to both users
+                              and search engines. I conduct in-depth keyword research,
+                               analyze your competitors  and develop strategies tailored .
+                          
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Content Writting
+                          </h3>
+                        <p class="small-para">
+            My content writing services focus on delivering engaging, 
+            SEO-optimized content that connects with your audience and drives results. 
+            Whether you need blog posts, articles, or website copy, 
+            I write with your brand's voice in mind, ensuring clarity, professionalism, and relevance. 
+            Every piece of content is tailored to improve your search engine rankings and boost online visibility.
+                        </p>
+                        <p class="small-para">
+                Great content is more than just words—it's the foundation of your online communication.
+                I aim to craft messages that resonate with your audience, spark engagement, 
+                and guide them through your website or sales funnel, ultimately increasing 
+                your brand's authority and customer base.
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fab fa-wordpress-simple"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              WordPress Dev
+                          </h3>
+                        <p class="small-para">
+                            I provide expert WordPress development services,
+                             building fully functional, customizable, and user-friendly
+                              websites using the most popular content management system. 
+                              Whether you need a blog, an e-commerce store, or a business 
+                              website, I use WordPress to create a site that is easy to manage
+                               and scalable for future growth. I customize themes, install 
+                               necessary plugins, and optimize your site for performance and SEO.
+
+                         
+                        </p>
+                        <p class="small-para">
+                            WordPress offers flexibility and scalability, 
+                            making it perfect for businesses of all sizes. 
+                            I ensure that your website is responsive, secure, and
+                             optimized for both users and search engines. 
+                             Beyond development, I provide ongoing support, ensuring. 
+                             
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Video Editing
+                          </h3>
+                        <p class="small-para">
+            I provide professional video editing services that transform
+             your raw footage into engaging, polished videos perfect for online platforms.
+              Whether you're looking to enhance social media content, create compelling 
+              YouTube videos, or design promotional materials, I incorporate smooth transitions, effects,
+               and animations to ensure your video stands out and aligns with your vision.
+                        </p>
+                        <p class="small-para">
+From start to finish, I focus on telling your story in the most visually 
+compelling way possible. My goal is to create videos that capture your 
+audience's attention and effectively communicate your message, helping 
+you build a strong, professional online presence also i can do advnce.
+
+
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form">
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Name">
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Email">
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Phone">
+                    <textarea class="form-controls" 
+                              placeholder="Write your message" 
+                              name="message" id="" cols="30"
+                              rows="10">
+                      </textarea>
+                    <input class="form-btn btn common-btn" 
+                           type="submit" value="Send Message" onclick="playSound('click.mp3.wav')">
+                           <div class="container">
+                            <button id="button"></button>
+                            </div>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    <p class="contact-text">7surjakandel@gmail.com</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">PHONE-1</h5>
+                    <p class="contact-text">+977 9761627718</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">phone-2</h5>
+                    <p class="contact-text">+977 9761791172</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading"> CURRENT ADDRESS</h5>
+                    <p class="contact-text"> Nepaltar, kathmandu</p>
+                    <p>Nepal</p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   <!-- Footer section -->
+   <footer class="footer">
+    <div class="footer-content">
+        <h4>
+            Copyright © 2024 All rights reserved |
+            This portfolio website template is created by Suraj Kandel.
+        </h4>
+    </div>
+    <div class="footer-menu">
+        <ul class="footer-menu-list">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61550028652400" class="footer-list-items" target="_blank" aria-label="Facebook" onclick="playSound('click.mp3.wav')">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/skandel207/" class="footer-list-items" target="_blank" aria-label="Instagram" onclick="playSound('click.mp3.wav')">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/7surajkandel" class="footer-list-items" target="_blank" aria-label="Twitter" onclick="playSound('click.mp3.wav')">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+
+<!-- Audio element for the sound -->
+<audio id="buttonSound">
+  <source src="click.mp3.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity=
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+      </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
